@@ -36,9 +36,9 @@ public class AlunoController {
    	 Query consulta = em.createQuery("select aluno from Aluno aluno");
    	 List<Aluno> lista = consulta.getResultList();
    	 em.getTransaction().commit();
-     em.close();
+    	 em.close();
      
-     return lista;
+         return lista;
 
     }
 
